@@ -217,8 +217,9 @@
 <blockquote>
 <p>你可以自己决定想要使用的分支；使用 Git 下载「Doku」以后还可以使用 <code>git pull</code> 更新「Doku」。</p>
 </blockquote>
-<h2 id="启用「Doku」"><a href="#启用「Doku」" class="headerlink" title="启用「Doku」"></a>启用「Doku」</h2><p>修改 Hexo 站点目录下的 <code>_config.yml</code> 中 <code>theme</code> 字段为 <code>doku</code> 即可。</p>
-<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs diff"># Extensions<br>## Plugins: https://hexo.io/plugins/<br>## Themes: https://hexo.io/themes/<br><span class="hljs-deletion">-theme: landscape</span><br><span class="hljs-addition">+theme: suka</span><br></code></pre></td></tr></table></figure>
+<h2 id="启用「Doku」"><a href="#启用「Doku」" class="headerlink" title="启用「Doku」"></a>启用「Doku」</h2><p>因为在主题的开发迭代过程中，主题的配置文件 很有可能会有变动。所以「Doku」把 <code>_config.yml</code> 添加到了 <code>.gitignore</code> 之中，这样可以避免使用 <code>git pull</code> 更新主题的用户出现冲突。同时，我们将配置文件的样例放在 <code>_config.example.yml</code> 文件中。</p>
+<p>因此，你需要把「Doku」主题目录下的 <code>_config.example.yml</code> 复制一份并把副本重命名为 <code>_config.yml</code>。接着，修改 Hexo 站点目录下的 <code>_config.yml</code> 中 <code>theme</code> 字段为 <code>doku</code> 即可。</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs diff"># Extensions<br>## Plugins: https://hexo.io/plugins/<br>## Themes: https://hexo.io/themes/<br><span class="hljs-deletion">-theme: landscape</span><br><span class="hljs-addition">+theme: doku</span><br></code></pre></td></tr></table></figure>
 
 <h2 id="运行「Doku」"><a href="#运行「Doku」" class="headerlink" title="运行「Doku」"></a>运行「Doku」</h2><p>在 Hexo 站点目录下运行下述命令启动一个 Hexo Server：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo s --debug<br></code></pre></td></tr></table></figure>
