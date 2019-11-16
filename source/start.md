@@ -56,14 +56,16 @@ git checkout {branch/tags name/commit hash}
 
 ## 启用「Doku」
 
-修改 Hexo 站点目录下的 `_config.yml` 中 `theme` 字段为 `doku` 即可。
+因为在主题的开发迭代过程中，主题的配置文件 很有可能会有变动。所以「Doku」把 `_config.yml` 添加到了 `.gitignore` 之中，这样可以避免使用 `git pull` 更新主题的用户出现冲突。同时，我们将配置文件的样例放在 `_config.example.yml` 文件中。
+
+因此，你需要把「Doku」主题目录下的 `_config.example.yml` 复制一份并把副本重命名为 `_config.yml`。接着，修改 Hexo 站点目录下的 `_config.yml` 中 `theme` 字段为 `doku` 即可。
 
 ```diff
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 -theme: landscape
-+theme: suka
++theme: doku
 ```
 
 ## 运行「Doku」
