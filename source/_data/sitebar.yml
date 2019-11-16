@@ -1,0 +1,30 @@
+docs:
+  getting_started:
+    overview: index.html
+    setup: setup.html
+    configuration: configuration.html
+    commands: commands.html
+    migration: migration.html
+  basic_usage:
+    writing: writing.html
+    front_matter: front-matter.html
+    tag_plugins: tag-plugins.html
+    asset_folders: asset-folders.html
+    data_files: data-files.html
+    server: server.html
+    generating: generating.html
+  deployment:
+    github_pages: github-pages.html
+    gitlab_pages: gitlab-pages.html
+    one_command_deployment: one-command-deployment.html
+  customization:
+    permalinks: permalinks.html
+    themes: themes.html
+    templates: templates.html
+    variables: variables.html
+    helpers: helpers.html
+    internationalization: internationalization.html
+    plugins: plugins.html
+  miscellaneous:
+    troubleshooting: troubleshooting.html
+    contributing: contributing.html

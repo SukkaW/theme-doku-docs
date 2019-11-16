@@ -3,22 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: Doku
+subtitle: '专门为在 Hexo 上撰写文档设计的主题'
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Sukka
+language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://doku.skk.moe
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing index.html from permalinks
+  trailing_index: false # Set to false to remove trailing index.html from permalinks
 
 # Directory
 source_dir: source
@@ -36,7 +36,7 @@ default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  field: post # Apply to the whole site
   exclude: ''
 filename_case: 0
 render_drafts: false
@@ -46,8 +46,9 @@ future: true
 highlight:
   enable: true
   line_number: true
+  hljs: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -65,7 +66,7 @@ tag_map:
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: true
+meta_generator: false
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -74,7 +75,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+use_date_for_updated: true
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -90,7 +91,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: doku
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
