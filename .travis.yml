@@ -1,8 +1,6 @@
 
 language: node_js
 node_js:
-  - "10"
-  - "12"
   - "13"
 git:
   depth: 3
@@ -13,6 +11,7 @@ before_install:
 install:
   - git clone https://github.com/sukkaw/hexo-theme-doku.git themes/doku
   - rm -rf themes/doku/.git
+  - cp theme_config.yml themes/doku/_config.yml
   - npm i
 script:
   - hexo g
@@ -22,6 +21,7 @@ deploy:
   local-dir: public
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
+  fqdn: https://doku.skk.moe
   email: $GITHUB_EMAIL
   name: $GITHUB_USER
   keep-history: true
