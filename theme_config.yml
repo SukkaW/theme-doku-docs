@@ -56,5 +56,5 @@ sidebar:
         - 0.1.0 | changelog/newest.html
 
 github:
-  repo: sukkaw/doku-theme-docs # sukkaw/doku-theme-docs
+  repo: sukkaw/theme-doku-docs # sukkaw/theme-doku-docs
   edit_on_github: true # true / false

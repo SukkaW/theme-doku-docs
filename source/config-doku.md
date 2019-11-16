@@ -91,5 +91,5 @@ sidebar:
 ```
 
 - `github`: GitHub 相关配置
-  - `repo`: 如果你的文档开源在 GitHub，可以填写 Repo 名称 如 `sukkaw/doku-theme-docs`
+  - `repo`: 如果你的文档开源在 GitHub，可以填写 Repo 名称 如 `sukkaw/theme-doku-docs`
   - `edit_on_github`: 当填写了 `repo` 并在这里 `enable` 后会在文档头部显示「在 GitHub 上编辑」的按钮
