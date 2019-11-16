@@ -1,0 +1,29 @@
+
+language: node_js
+node_js:
+  - "10"
+  - "12"
+  - "13"
+git:
+  depth: 3
+  quiet: true
+before_install:
+  - rm -rf .git
+  - npm set audit false
+install:
+  - git clone https://github.com/sukkaw/hexo-theme-doku.git themes/doku
+  - rm -rf themes/doku/.git
+  - npm i
+script:
+  - hexo g
+cache: npm
+deploy:
+  provider: pages
+  local-dir: public
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  email: $GITHUB_EMAIL
+  name: $GITHUB_USER
+  keep-history: true
+  on:
+    branch: master
