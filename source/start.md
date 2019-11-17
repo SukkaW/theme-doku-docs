@@ -27,6 +27,8 @@ $ hexo init <folder>
 $ cd <folder>
 ```
 
+Hexo 初始化完成以后，注意删除 `source/_posts` 目录（及其其中的文件）。
+
 ## 下载「Doku」
 
 ### 直接下载
