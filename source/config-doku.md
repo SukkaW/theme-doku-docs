@@ -59,10 +59,10 @@ sidebar:
       # 以下是一个二级侧边栏的配置样例
       level: 2
       items:
-        开始使用: # 子标题
+        - 开始使用: # 子标题
           - 安装 | install.html # 格式为 "[链接文字] | [链接的 URL]"
           - 配置 | config.html
-        基本使用:
+        - 基本使用:
           - 编写 | writing.html
 ```
 
