@@ -220,7 +220,7 @@
 <li>如果你将关于页面的内容保存在 <code>source/about/index.md</code> 文件中，那么关于页面最终的 URL 会是 <code>https://theme-doku.skk.moe/docs/about/index.html</code>（大部分 Web 服务器均支持忽略 <code>index.html</code>，因此也可以被简化为 <code>https://theme-doku.skk.moe/docs/about/</code>）。</li>
 <li>如果你在 <code>about.md</code> 文件的 Front-Matter 中添加 <code>permalink</code> 字段，那么此时不论 <code>about.md</code> 所在的位置，最终生成的 URL 将会是 <code>https://theme-doku.skk.moe/docs/[permalink]</code>，注意 <code>permalink</code> 字段也是相对于站点配置文件中的 <code>root</code> 的。</li>
 </ul>
-<h2 id="「Doku」"><a href="#「Doku」" class="headerlink" title="「Doku」"></a>「Doku」</h2><h3 id="文档类型"><a href="#文档类型" class="headerlink" title="文档类型"></a>文档类型</h3><p>「Doku」在设计时考虑到大型文档的。大型文档通常包括多种类型的大型页面如「使用文档」、「API」、「指导」、「插件」，等等。以 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo 的官方文档</a> 为 例，Hexo 的官方文档主要包括两个主要部分<a href="https://hexo.io/docs/" target="_blank" rel="noopener">「Docs」</a>和<a href="https://hexo.io/api/" target="_blank" rel="noopener">「API」</a>，并且两个部分分别包含相关的文档、以及相应的两个目录。</p>
+<h2 id="「Doku」"><a href="#「Doku」" class="headerlink" title="「Doku」"></a>「Doku」</h2><h3 id="文档类型"><a href="#文档类型" class="headerlink" title="文档类型"></a>文档类型</h3><p>「Doku」在设计时考虑到了大型文档的需要。大型文档通常包括多种类型的大型页面如「使用文档」、「API」、「指导」、「插件」，等等。以 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo 的官方文档</a> 为 例，Hexo 的官方文档主要包括两个主要部分<a href="https://hexo.io/docs/" target="_blank" rel="noopener">「Docs」</a>和<a href="https://hexo.io/api/" target="_blank" rel="noopener">「API」</a>，并且两个部分分别包含相关的文档、以及相应的两个目录。</p>
 <p>因此，「Doku」提供了「文档类型」的概念。「Doku」要求每篇文章都指定文章类型，并要求在配置文件中侧边栏部分配置要求为不同的「文档类型」提供对应的侧边栏配置，以便在不同类型的文档页面中分别显示不同的侧边栏内容。</p>
 <h3 id="i18n"><a href="#i18n" class="headerlink" title="i18n"></a>i18n</h3><p>「Doku」尚不支持 i18n 多语言文档，但有计划在未来提供支持。</p>
 <hr>
