@@ -69,9 +69,9 @@ git checkout {branch/tags name/commit hash}
 ```
 
 {% note warning 关于低版本 Hexo 的注意事项 %}
-如果你使用的 Hexo 版本未支持自动覆盖主题配置，那么上述配置文件结构（即 `_config.doku.yml`）将不可用，你需要将 `_config.example.yml` 复制一份到主题目录（与 `_config.example.yml` 同目录）并更名为 `_config.yml` 来达到上述结构的相同效果。但站点目录下的 `theme` 字段配置是相同的，即修改为 `doku`。
+如果你使用的 Hexo 版本未支持自动覆盖主题配置，那么上述配置文件结构（即 `_config.doku.yml`）将不可用，你需要将 `_config.example.yml` 复制一份到主题目录（与 `_config.example.yml` 同目录）并更名为 `_config.yml` 来达到上述结构的相同效果。但站点目录下 `_config.yml` 的 `theme` 字段配置是相同的，即修改为 `doku`。
 
-注：若使用的是最新版本的 Hexo 则可以直接忽略上一段的内容。
+注：若使用的是最新版本的 Hexo 则可以直接忽略这段提示内容。
 {% endnote %}
 
 ## 运行「Doku」
