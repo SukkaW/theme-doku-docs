@@ -58,7 +58,7 @@ git checkout {branch/tags name/commit hash}
 
 ## 启用「Doku」
 
-因此，你需要把「Doku」主题目录下的 `_config.example.yml` 复制一份到站点目录并把副本重命名为 `_config.doku.yml`。接着，修改 Hexo 站点目录下的 `_config.yml` 中 `theme` 字段为 `doku` 即可。
+你需要把「Doku」主题目录下的 `_config.example.yml` 复制一份到站点目录并把副本重命名为 `_config.doku.yml`。接着，修改 Hexo 站点目录下的 `_config.yml` 中 `theme` 字段为 `doku` 即可。
 
 ```diff
 # Extensions
