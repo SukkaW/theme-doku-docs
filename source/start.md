@@ -58,9 +58,7 @@ git checkout {branch/tags name/commit hash}
 
 ## 启用「Doku」
 
-因为在主题的开发迭代过程中，主题的配置文件 很有可能会有变动。所以「Doku」把 `_config.yml` 添加到了 `.gitignore` 之中，这样可以避免使用 `git pull` 更新主题的用户出现冲突。同时，我们将配置文件的样例放在 `_config.example.yml` 文件中。
-
-因此，你需要把「Doku」主题目录下的 `_config.example.yml` 复制一份并把副本重命名为 `_config.yml`。接着，修改 Hexo 站点目录下的 `_config.yml` 中 `theme` 字段为 `doku` 即可。
+你需要把「Doku」主题目录下的 `_config.example.yml` 复制一份到站点目录并把副本重命名为 `_config.doku.yml`。接着，修改 Hexo 站点目录下的 `_config.yml` 中 `theme` 字段为 `doku` 即可。
 
 ```diff
 # Extensions
@@ -69,6 +67,12 @@ git checkout {branch/tags name/commit hash}
 -theme: landscape
 +theme: doku
 ```
+
+{% note warning 关于低版本 Hexo 的注意事项 %}
+如果你使用的 Hexo 版本未支持自动覆盖主题配置，那么上述配置文件结构（即 `_config.doku.yml`）将不可用，你需要将 `_config.example.yml` 复制一份到主题目录（与 `_config.example.yml` 同目录）并更名为 `_config.yml` 来达到上述结构的相同效果。但站点目录下 `_config.yml` 的 `theme` 字段配置是相同的，即修改为 `doku`。
+
+注：若使用的是最新版本的 Hexo 则可以直接忽略这段提示内容。
+{% endnote %}
 
 ## 运行「Doku」
 
